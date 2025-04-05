@@ -7,10 +7,36 @@
     <script type="text/javascript" async
         src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-AMS_CHTML">
     </script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+            background-color: #f8f9fa;
+            text-align: center;
+        }
+        h1 {
+            color: #333;
+        }
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+        .math-container {
+            background: white;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
 </head>
 <body>
     <h1>Welcome to My Math Website</h1>
-    <p>Here is the Poisson distribution formula:</p>
-    <p>\[ P(X = k) = \frac{e^{-\lambda} \lambda^k}{k!} \]</p>
+    <div class="math-container">
+        <p>Here is the Poisson distribution formula:</p>
+        <p>\[ P(X = k) = \frac{e^{-\lambda} \lambda^k}{k!} \]</p>
+    </div>
 </body>
 </html>
