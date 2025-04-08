@@ -1,44 +1,63 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hu">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Math Website</title>
-    <script type="text/javascript" async
-        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-AMS_CHTML">
-    </script>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-            padding: 20px;
-            max-width: 800px;
-            margin: auto;
-            background-color: #f8f9fa;
-            text-align: center;
-        }
-        h1 {
-            color: #333;
-        }
-        p {
-            font-size: 18px;
-            line-height: 1.6;
-        }
-        .math-container {
-            background: white;
-            padding: 10px;
-            border-radius: 10px;
-            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-        }
-    </style>
+    <title>22. Vektor Szorzása Számmal</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Welcome to My Math Website</h1>
-    Mi történik ha ide
-    <div class="math-container">
-        <p>Here is the Poisson distribution formula:</p>
-        <p>\[ P(\xi = k) = \frac{e^{-\lambda} \lambda^k}{k!} \]</p>
+    <div class="container">
+        <header>
+            <h1>22. VEKTOR SZORZÁSA SZÁMMAL</h1>
+        </header>
+
+        <section class="introduction">
+            <p>
+                Korábban megismerkedtünk a vektorokkal (olyan mennyiségek, melyeknek iránya és nagysága van), és
+                definiáltuk vektorok körében az összeadást és a kivonást.
+            </p>
+            <div class="images">
+                <img src="image1.jpg" alt="Vektor ábrák 1">
+                <img src="image2.jpg" alt="Vektor ábrák 2">
+            </div>
+            <p>Ebbe a leckében új művelettel ismerkedünk meg.</p>
+        </section>
+
+        <section class="example">
+            <h2>1. példa</h2>
+            <p>
+                Egy vonat az egyenes pályán <span class="highlight">15 m/s</span> egyenletes sebességgel halad.
+                Jelölje v az egy másodperc alatt megtett elmozdulását, ekkor (méterben számolva) |v| = 15.
+                Mi lesz az elmozdulása 2, 3, 4 másodperc alatt?
+            </p>
+            <p>
+                Mivel a pálya egyenes, az elmozdulás-vektorok v + v, v + v + v, v + v + v + v, és ezek nagysága rendre
+                2 · 15, 3 · 15, 4 · 15 (méter). A valós számok analógiájára az ismételt összeadást célszerűnek tűnik most is
+                szorzással jelölni. Ekkor az elmozdulás-vektorokat 2v, 3v, 4v alakban írhatnánk, és nagyságukra teljesül,
+                hogy |2v| = 2|v| stb., amit elvárunk.
+            </p>
+            <p>
+                Hogyan definiálhatnánk ekkor a (-1) · v értéket? Ha a valós számokkal kapcsolatos analógiát megtartjuk,
+                akkor v + (-1) · v = 0, innen (-1) · v = -v adódik. (Tehát egy vektor -1-szerese megegyezik a vektor
+                ellentettjével.)
+            </p>
+        </section>
+
+        <section class="definition">
+            <h3>Definíció</h3>
+            <div class="definition-box">
+                <p>Legyen adott az a vektor és egy λ valós szám.</p>
+                <ul>
+                    <li>a) Ha λ ≠ 0, akkor az a vektor és λ szám szorzata az a vektor, amelynek abszolút értéke |λ| · |a| és
+                        λ > 0 esetén iránya az a vektor irányával megegyező;
+                        λ &lt; 0 esetén iránya az a vektor irányával ellentétes;
+                    </li>
+                    <li>b) Ha a = 0, akkor λa = 0, így iránya tetszőleges.</li>
+                    <li>c) Ha λ = 0, akkor λa = 0.</li>
+                </ul>
+            </div>
+        </section>
     </div>
-    és ide írok?
 </body>
 </html>
